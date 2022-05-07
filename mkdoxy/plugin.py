@@ -82,7 +82,7 @@ class MkDoxy(BasePlugin):
 			checkConfig(self.config_project, self.proData, config['strict'])
 
 			if self.config.get("save-api"):
-				tempDirApi = tempDir("", self.config.get("save-api"), projectName)
+				tempDirApi = tempDir("", self.config.get("save-api"), "")
 			else:
 				tempDirApi = tempDir(config['site_dir'], "assets/.doxy/", projectName)
 
